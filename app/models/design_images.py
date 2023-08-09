@@ -1,6 +1,6 @@
 import datetime
 from app.extensions import db
-from models.design import Design
+from app.models.design import Design
 
 
 class DesignAssets(db.Model):

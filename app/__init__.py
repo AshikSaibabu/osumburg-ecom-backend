@@ -6,6 +6,8 @@ from flask_migrate import Migrate
 from app.models import *
 from flask_jwt_extended import JWTManager
 from app.main.auth.api.blueprints.auth import auth
+from app.main.designs.api.blueprints.designs import designs
+from app.main.assets.api.blueprints.assets import assets
 
 
 def create_app(config_class=Config):
@@ -20,6 +22,8 @@ def create_app(config_class=Config):
     from app.main import bp as main_bp
     app.register_blueprint(main_bp)
     app.register_blueprint(auth, url_prefix = '/api/auth')
+    app.register_blueprint(designs, url_prefix = '/api/designs')
+    app.register_blueprint(assets, url_prefix = '/api/assets')
     
     @app.route('/test/')
     def test_page():
