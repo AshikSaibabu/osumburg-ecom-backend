@@ -1,6 +1,6 @@
 import datetime
 from app.extensions import db
-from models.product_variant import ProductVariants
+from app.models.product_variant import ProductVariants
 
 
 class Stock(db.Model):

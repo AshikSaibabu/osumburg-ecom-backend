@@ -1,6 +1,6 @@
 import datetime
 from app.extensions import db
-from models.product_color_variant import ProductColorVariant
+from app.models.product_color_variant import ProductColorVariant
 
 
 class ProductColorVariantImages(db.Model):

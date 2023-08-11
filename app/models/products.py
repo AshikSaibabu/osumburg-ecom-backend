@@ -1,8 +1,8 @@
 import datetime
 from app.extensions import db
-from models.category import Category
-from models.type import Type
-from models.design import Design
+from app.models.category import Category
+from app.models.type import Type
+from app.models.design import Design
 
 
 class Product(db.Model):

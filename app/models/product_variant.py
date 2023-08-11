@@ -1,8 +1,8 @@
 import datetime
 from app.extensions import db
-from models.product_color_variant import ProductColorVariant
-from models.size_varaint import SizeVariant
-from models.sleeve_length_variant import SleeveLengthVariant
+from app.models.product_color_variant import ProductColorVariant
+from app.models.size_varaint import SizeVariant
+from app.models.sleeve_length_variant import SleeveLengthVariant
 
 
 class ProductVariants(db.Model):
